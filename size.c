@@ -1,18 +1,23 @@
 #include <stdio.h>
-int main ()
+
+int main()
 {
-     int a = 6; int b =0 ; int c=2147483648;
+    int age;
+    printf("Enter your Age\n");
+
+    scanf("%d", &age);
+    printf("You have Entered Your Age %d as your age\n", age);
+    
+    if (age>=18) 
     {
-        printf("Table of %d is\n", c);
-        
+        printf("You can Vote!");
+
     }
-   
-    for(int i=1 ; i<=10 ; i++)
-    {
-        printf("%d X %d = %d \n", a , b+=1 , a*i );
-     
-        
+    else {
+        printf("GO AND STUDY");
+
     }
 
-return 0;
+
+    return 0;
 }
