@@ -1,19 +1,20 @@
 #include <stdio.h>
 
-int main ()
 
-
+int sum(int a, int b)
 {
+    return a + b ;
 
-    int i=0;
+}
 
-
-    do
-    {
-        printf("%d\n", i);
-        i=i+1 ;
-
-    } while (i<=10);
+int main()
+{
+    int a,b,c ;
+    a = 45 ;
+    b = 32 ;
+    c = sum(a,b);
+    printf(" Sum is %d", c);
     
+
     return 0;
 }
