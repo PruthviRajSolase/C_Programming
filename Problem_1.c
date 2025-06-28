@@ -3,20 +3,11 @@
 
 int main()
 {
-  int size = 6 ;
-  int marks[size];
-  int counter;
+  char name[] = {'P','r','u','t','h','v','i','r','a','j','\0'};
+  char SurName[] = "Solase";
 
-  for (counter=0; counter < size ; counter++)
-  {
-    scanf("%d", &marks[counter]);
-  }
-  
-  for (counter = 0; counter < size ; counter++)
-  {
-    printf("The element at %d is %d\n",counter,marks[counter]);
-  }
-  
+  printf("%s ",name);
+  printf("%s", SurName);
 
-    return 0;
+  return 0;
 }
