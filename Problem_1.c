@@ -3,11 +3,20 @@
 
 int main()
 {
-  int num[] = {65,90,43,54,76,88};
-  printf("The Number is %d\n", num[2]);
-  printf("The Number is %d\n", num[3]);
-  printf("The Number is %d\n", num[4]);
-  printf("The Number is %d\n", num[0]);
+  int size = 6 ;
+  int marks[size];
+  int counter;
+
+  for (counter=0; counter < size ; counter++)
+  {
+    scanf("%d", &marks[counter]);
+  }
+  
+  for (counter = 0; counter < size ; counter++)
+  {
+    printf("The element at %d is %d\n",counter,marks[counter]);
+  }
+  
 
     return 0;
 }
