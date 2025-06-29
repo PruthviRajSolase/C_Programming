@@ -1,29 +1,23 @@
 #include <stdio.h>
 
-void function1();
-void function2();
+void add(int,int);
 
 
 int main()
 {
-  printf("In main function\n");
-  printf("Calling Function 1\n");
-  function1();
-  printf("In Main function after returning from function 1\n");
-
+  int a, b ;
+  printf("Enter Number a\n");
+  scanf("%d\n", &a);
+  printf("Enter Number b\n");
+  scanf("%d\n", &b);
+  add(a,b);
+  
   return 0;
 }
 
-void function1()
+void add(int a ,int b)
 {
-  printf("You have Entered Function 1\n");
-  printf("Calling Function 2\n");
-  function2();
+  int Result = a + b;
 
-}
-
-void function2()
-{
-  printf("You have Entered Function 2\n");
-  printf("Get back to Main Function through function 1\n");
+  printf("The addition of given two numbers is %d\n",Result);
 }
