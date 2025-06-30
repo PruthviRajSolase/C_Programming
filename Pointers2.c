@@ -1,15 +1,29 @@
 #include  <stdio.h>
 
+void swap(int *a,int *b)
+{
+    int c;
+
+    c = *a + *b;
+    *a = c - *a;
+    *b = c - *b ;
+
+}
+
 int main()
 {
-    int a = 10;
-    int b = 20;
-    int c = a + b ;
+    int x,y;
 
-    b = c - b ;
-    a = c - b ;
+    printf("Enter x\n");
+    scanf("%d",&x);
 
-    printf("New Value of a is %d\nNew Value of b is %d",a,b);
+    printf("Enter y\n");
+    scanf("%d",&y);
 
+    swap(&x,&y);
+
+    printf("New value of x and y are %d and %d respectively\n",x,y);
+
+    
     return 0;
 }
