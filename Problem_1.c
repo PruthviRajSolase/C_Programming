@@ -7,9 +7,13 @@ int main()
 {
   int a, b ;
   printf("Enter Number a\n");
-  scanf("%d\n", &a);
+  
+  scanf("%d", &a);
+
   printf("Enter Number b\n");
-  scanf("%d\n", &b);
+  scanf("%d", &b);
+  
+  
   add(a,b);
   
   return 0;
