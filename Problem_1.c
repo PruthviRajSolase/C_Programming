@@ -1,27 +1,16 @@
 #include <stdio.h>
 
-void add(int,int);
 
 
 int main()
 {
-  int a, b ;
-  printf("Enter Number a\n");
-  
-  scanf("%d", &a);
+  int a = 12 ;
 
-  printf("Enter Number b\n");
-  scanf("%d", &b);
-  
-  
-  add(a,b);
+  int *b;
+  b = &a;
+   
+  printf("The address of a is %p\n", b);
+  printf("The Value store in a is %d\n",*b);
   
   return 0;
-}
-
-void add(int a ,int b)
-{
-  int Result = a + b;
-
-  printf("The addition of given two numbers is %d\n",Result);
 }
