@@ -8,13 +8,9 @@ int main()
 
     fp = fopen("raj.txt","a");
     {
-      char input[100];
 
-      printf("Enter the text : ");
-      gets(input);
-
-      fputs(input,fp);
-      printf("Text added");
+        char ch;
+      ch = fgetc(fp); 
         
         fclose(fp);
     }
