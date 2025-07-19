@@ -9,8 +9,8 @@ int main()
         int rollNo;
     };
 
-    struct STUDENT Raj = {"Pruthviraj Solase",18,30};
-    printf("%s ages %d with rollNo. %d",Raj.name,Raj.age,Raj.rollNo);
+    struct STUDENT Raj = {"Pruthviraj Nanasaheb Solase",18,30};
+    printf("%s aged %d with rollNo. %d",Raj.name,Raj.age,Raj.rollNo);
     
     
     return 0;
